@@ -1,0 +1,17 @@
+{
+  "name": "cordova.plugins.qcc",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "cordova.plugins.qcc",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

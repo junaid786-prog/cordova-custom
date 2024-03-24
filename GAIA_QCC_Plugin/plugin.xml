@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova.plugins.qcc" version="1.0.0"
+	xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>GAIA_QCC_Plugin</name>
+	<js-module name="GAIA_QCC_Plugin" src="www/GAIA_QCC_Plugin.js">
+		<clobbers target="cordova.plugins.GAIA_QCC_Plugin" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="GAIA_QCC_Plugin">
+				<param name="android-package" value="cordova.plugins.qcc.GAIA_QCC_Plugin" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="app/src/main/AndroidManifest.xml">
+			<uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+			<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+		</config-file>
+		<source-file src="src/android/cordova/plugins/qcc/GAIA_QCC_Plugin.java" target-dir="src/cordova/plugins/qcc" />
+	</platform>
+</plugin>

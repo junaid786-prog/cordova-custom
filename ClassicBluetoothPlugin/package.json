@@ -1,0 +1,17 @@
+{
+  "name": "info.android.custom.bluetooth",
+  "version": "1.0.0",
+  "description": "for ble",
+  "cordova": {
+    "id": "info.android.custom.bluetooth",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC"
+}
